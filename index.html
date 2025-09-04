@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Trading Card Game Society</title>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #555555;
+            background-color: #ecffff;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .content {
+            width: 40%;
+        }
+
+        .bg-1 {
+            background-color: #F9F1F0;
+            transform: rotate(1deg) translate(0,8%);
+            height: 35cap;
+            box-shadow: 0 0 1cap rgba(249, 241, 240, 0.8);
+            color: #555555;
+        }
+
+        .bg-2 {
+            background-color: #F79489;
+            box-shadow: 0 0 1cap rgba(247, 148, 137, 0.8);
+            height: 28cap;
+            transform: rotate(-1deg) translate(-5%, -8%);
+            color: #555555;
+        }
+
+        .bg-3 {
+            transform: rotate(1deg) translate(0%, -8%);
+            background-color: #fadcd9;
+            height: 50cap;
+            box-shadow: 0 0 1cap rgba(255, 212, 212, 0.8);
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #F8AFA6;
+            transform: rotate(-0.5deg) translate(-5%, -25%);
+            height: 25cap;
+            box-shadow: 0 0 1cap rgba(248, 175, 166, 0.8);
+            color: #555555;
+        }
+
+        .foot {
+            background-color: #F79489;
+            box-shadow: 0 0 1cap rgba(247, 148, 137, 0.8);
+            height: 15cap;
+            transform: rotate(1deg) translate(0%, -17%);
+            color: #555555;
+        }
+        .target {
+            position: absolute;
+            top: -9%;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        #bod {
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 0;
+            opacity: 0.8;
+            background-color: #eed5c4;
+            box-shadow: 0 0 2cap #eed5c4;
+        }
+        #bodi {
+            position:absolute;
+            width: 90%;
+            height: 100%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 0;
+            background-color: #ffffff;
+            box-shadow: 0 0 1cap rgba(255, 255, 255, 1);
+        }
+
+        .navbar {
+
+            background-color: #eed5c4;
+            box-shadow: 0 0 0.3vw rgba(255, 212, 212, 0.8);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 16px;
+            padding-left: 16px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+            color: #000;
+        }
+
+        .navbar-nav li a:hover {
+            color: #b11e43 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bod"></div>
+    <div id="bodi"></div>
+    <!-- Navbar -->
+    <div id="headr">
+        <nav class="navbar navbar-default">
+            <div class="container" style="width: 100%;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><b>TCG Society</b></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#About">About Us</a></li>
+                        <li><a href="#Plans">Our Plans</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center content">
+        <h1 class="margin"><b>The Trading Card Game Society</b></h1>
+        <h3>A leisure club</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center content">
+        <h3 class="margin">About Us</h3>
+        <div id="About" class="target"></div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p>
+                    Just like you, we are simply fellow students who wish to share our passion for Trading Card Games. And make it more accessible for everyone.
+                </p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!-- Third Container -->
+    <div class="container-fluid bg-3 text-center content">
+        <h3 class="margin">Our Plans</h3>
+        <div id="Plans" class="target"></div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p>
+                    - First and foremost, we intend to sell cards at market price.<br><br>
+                    - Then, we will organize time zones where we simply gather, relax, and play various card/board games.</br></br>
+                    - At the same time, we will occasionally host card games during common lunch breaks.</br></br>
+                    - And finally, we plan to organize competitions of card games. 
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <!-- Fourth Container -->
+    <div class="container-fluid bg-4 text-center content">
+        <h3 class="margin" style="margin-bottom: 10%;"><b>Contact</b></h3> 
+        <div id="Contact" class="target"></div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p><b>
+                    <a href="https://www.instagram.com/mari_tcg_society?igsh=Z3pvYXpicXN5MTdj&utm_source=qr">Instagram</a></br>
+                    <a href="https://discord.gg/hSYsucDC">Discord</a></br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-Io1BAG4-YMVU6OLgGjgSp-CSG1WKF9eukBIv3af6Oomh7Q/viewform?usp=dialog">Google Application Form</a></br>
+                </b></p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid foot text-center content">
+        <p>The Trading Card Game Society<br>~ ~ ~<br>Hosted on Github Pages</p>
+    </footer>
+
+    <!---->
+    <script>
+        function resize() {
+            const r = (1-((window.innerWidth*9)/(window.innerHeight*16)))*100+40;
+            if (r > 80)
+            {
+                if (r > 100)
+                {
+                    document.querySelector("body").style.width = `${100}%`;
+                }
+                let el = document.getElementsByClassName("content");
+                for (const e of el)
+                    e.style.width = `${r-40}%`;
+            }
+            else if (r<40)
+            {
+                document.querySelector("body").style.width = `${40}%`;
+                let el = document.getElementsByClassName("content");
+                for (const e of el)
+                    e.style.width = `${40}%`;
+            }
+            else
+            {
+                document.querySelector("body").style.width = `${r}%`;
+                let el = document.getElementsByClassName("content");
+                for (const e of el)
+                    e.style.width = `${40}%`;
+            }
+        }
+        window.addEventListener("load", resize);
+        window.addEventListener("resize", resize);
+    </script>
+
+</body>
+
+</html>
