@@ -45,7 +45,7 @@
         }
 
         .bg-2 {
-            background-color: #F79489;
+            background-color: #F8AFA6;
             box-shadow: 0 0 1cap rgba(247, 148, 137, 0.8);
             height: 32cap;
             transform: rotate(-1deg) translate(-5%, -8%);
@@ -73,6 +73,22 @@
             box-shadow: 0 0 1cap rgba(247, 148, 137, 0.8);
             height: 20cap;
             transform: rotate(1deg) translate(0%, -17%);
+            color: #555555;
+        }
+        .n-1 {
+            background-color: #fadcd9;
+            box-shadow: 0 0 4cap rgba(247, 148, 137, 1);
+            height: 25cap;
+            transform: rotate(-1deg) translate(-2%, -8cap) scale(50%, 50%);
+            color: #555555;
+
+            border: 2cap double rgba(248, 114, 99, 0.5);
+        }
+        .n-1:hover {
+            background-color: #fadcd9;
+            box-shadow: 0 0 2cap rgb(248, 114, 99);
+            height: 25cap;
+            transform: rotate(-1deg) translate(-2%, -8cap) scale(55%,55%);
             color: #555555;
         }
         .target {
@@ -162,6 +178,12 @@
     </div>
 
     <!-- Second Container -->
+    <div class="container-fluid n-1 text-center content" onclick="openform()">
+        <h1 class="margin" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; width: 100%;"><b>APPLY HERE</b></h1>
+        <div id="About" class="target"></div>
+    </div>
+
+    <!-- Second Container -->
     <div class="container-fluid bg-2 text-center content">
         <h3 class="margin">About Us</h3>
         <div id="About" class="target"></div>
@@ -227,6 +249,7 @@
                     e.style.width = `${40}%`;
             }
         }
+        function openform(){window.open('https://docs.google.com/forms/d/e/1FAIpQLSe-Io1BAG4-YMVU6OLgGjgSp-CSG1WKF9eukBIv3af6Oomh7Q/viewform?usp=dialog', '_blank');}
         window.addEventListener("load", resize);
         window.addEventListener("resize", resize);
     </script>
